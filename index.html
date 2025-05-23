@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stabl - Pitch Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1A1A1A; /* Dark gray for gym intensity */
+      color: #F8F1E9; /* Cream for contrast */
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #D4A373; /* Tan for brand accents */
+    }
+    .section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .leather-bg {
+      background-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.85)), url('https://www.transparenttextures.com/patterns/leather.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .btn-stabl {
+      background-color: #D4A373;
+      color: #1A1A1A;
+      transition: all 0.3s ease;
+    }
+    .btn-stabl:hover {
+      background-color: #F8F1E9;
+      color: #1A1A1A;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="leather-bg sticky top-0 z-20 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center py-5 px-6">
+      <div class="text-4xl font-bold text-[#F8F1E9]">Stabl</div>
+      <ul class="flex space-x-8 text-[#F8F1E9] text-lg">
+        <li><a href="#cover" class="hover:text-[#D4A373] transition-colors">Home</a></li>
+        <li><a href="#problem" class="hover:text-[#D4A373] transition-colors">Problem</a></li>
+        <li><a href="#solution" class="hover:text-[#D4A373] transition-colors">Solution</a></li>
+        <li><a href="#product" class="hover:text-[#D4A373] transition-colors">Product</a></li>
+        <li><a href="#contact" class="hover:text-[#D4A373] transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cover Slide -->
+  <section id="cover" class="section leather-bg text-center">
+    <div class="container mx-auto px-6">
+      <h1 class="text-6xl font-bold mb-4">Stabl</h1>
+      <p class="text-3xl mb-6">Grounded for Greatness</p>
+      <p class="text-xl mb-4">Founder: Ahmad Hamood</p>
+      <p class="text-lg mb-4">
+        <a href="mailto:hamoodx614@gmail.com" class="hover:text-[#D4A373]">hamoodx614@gmail.com</a> | 
+        <a href="https://www.linkedin.com/in/ahmad-hamood-990a8b237" target="_blank" class="hover:text-[#D4A373]">LinkedIn</a> | 
+        <a href="https://stabl.netlify.app" target="_blank" class="hover:text-[#D4A373]">stabl.netlify.app</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="section bg-[#1A1A1A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">The Problem</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-4">Strength training is booming globally, but lifters rely on generic sneakers or outdated shoes like Converse, which aren’t designed for lifting biomechanics.</p>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-4">Mainstream brands like Nike, Adidas, and Puma market padded jogging shoes as “gym shoes,” lacking the stability, grip, and support serious athletes need.</p>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto">There’s a clear gap for purpose-built lifting footwear to go mainstream.</p>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution" class="section leather-bg">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">The Solution</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-4">Stabl builds purpose-engineered footwear for lifters who don’t compromise.</p>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto">High-ankle, flat-soled, sturdy, and stylish—like cleats for the gym. Our trainers maximize ground grip, stability, and ankle support for better form and stronger lifts.</p>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="product" class="section bg-[#1A1A1A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Our Product</h2>
+      <div class="max-w-3xl mx-auto">
+        <ul class="text-lg leading-relaxed mb-4">
+          <li class="mb-2">• High-top design for ankle support</li>
+          <li class="mb-2">• Flat, grounded sole for lifting stability</li>
+          <li class="mb-2">• Variants: Heavy-duty canvas and premium leather</li>
+          <li class="mb-2">• Designed aesthetics, practical functionality</li>
+          <li>• Built by lifters, for lifters</li>
+        </ul>
+        <p class="text-lg leading-relaxed mb-4"><strong>Rooted in Ancient Wisdom:</strong> Inspired by Hindu and Vedic traditions, emphasizing grounded postures like yoga asanas and deep squats for balance and power.</p>
+        <p class="text-lg leading-relaxed"><strong>Performance Driven:</strong> Low-profile sole, reinforced heel, grippy outsole—engineered for heavy lifts and dynamic workouts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Opportunity -->
+  <section id="market" class="section leather-bg">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Market Opportunity</h2>
+      <ul class="text-lg leading-relaxed max-w-3xl mx-auto">
+        <li class="mb-2">• 200M+ global gym-goers</li>
+        <li class="mb-2">• 60M+ strength training-focused users (powerlifters, CrossFitters, bodybuilders)</li>
+        <li class="mb-2">• Rise in functional training and gym culture</li>
+        <li>• No clear leader in lifting-specific footwear</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Competitive Advantage -->
+  <section id="competitive" class="section bg-[#1A1A1A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Competitive Advantage</h2>
+      <ul class="text-lg leading-relaxed max-w-3xl mx-auto">
+        <li class="mb-2">• Purpose-built (not repurposed) for lifting</li>
+        <li class="mb-2">• Affordable without compromising quality</li>
+        <li class="mb-2">• Early mover advantage in a neglected niche</li>
+        <li>• Grounded, performance-first brand DNA</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Go-To-Market Strategy -->
+  <section id="go-to-market" class="section leather-bg">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Go-To-Market Strategy</h2>
+      <ul class="text-lg leading-relaxed max-w-3xl mx-auto">
+        <li class="mb-2">• Launch limited prototypes to early community via Instagram bio link (live)</li>
+        <li class="mb-2">• D2C website with storytelling and product education</li>
+        <li class="mb-2">• Community-led growth through fitness creators & gym athletes</li>
+        <li>• Social virality through engineered design and niche targeting</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Traction -->
+  <section id="traction" class="section bg-[#1A1A1A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Traction</h2>
+      <ul class="text-lg leading-relaxed max-w-3xl mx-auto">
+        <li class="mb-2">• Website live: <a href="https://stabl.netlify.app" target="_blank" class="hover:text-[#D4A373]">stabl.netlify.app</a></li>
+        <li class="mb-2">• Community form collecting early demand</li>
+        <li class="mb-2">• Design, logo, and prototyping in progress</li>
+        <li>• Solo founder with strong startup & marketing background</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Founder -->
+  <section id="founder" class="section leather-bg">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Founder</h2>
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-3xl font-bold mb-4">Ahmad Hamood</h3>
+        <p class="text-lg leading-relaxed mb-4">Founder, Sales & Product. A 24-year-old entrepreneur with 3+ years of experience across three startups, including YC-backed Oneistox (now Novatr). Currently pursuing a PGDM at DY Patil Pune.</p>
+        <p class="text-lg leading-relaxed mb-4">Dedicated weightlifter and sports enthusiast, Ahmad’s deep connection to gym culture inspired Stabl. Enjoys writing and caring for his two pet goldfish.</p>
+        <p class="text-lg leading-relaxed">Operating solo, leveraging a network of engineering friends, and planning to onboard a co-founder strong in design and tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ask -->
+  <section id="ask" class="section bg-[#1A1A1A]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Our Ask</h2>
+      <ul class="text-lg leading-relaxed max-w-3xl mx-auto">
+        <li class="mb-2">• Funding to support prototyping, manufacturing, and launch</li>
+        <li class="mb-2">• Mentorship in footwear production, fitness creator marketing</li>
+        <li>• Access to community growth networks and early adopters</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section id="vision" class="section leather-bg">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-center">Vision & Mission</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-4"><strong>Vision:</strong> To become the gold standard in gym footwear, like cleats for football. No logos, no fluff—just performance, stability, and style.</p>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-4"><strong>Purpose:</strong> Stabl delivers footwear crafted for maximizing gym performance, addressing the flaws of generic shoes like Converse with purpose-built design.</p>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto"><strong>Mission:</strong> Empower every athlete to achieve peak strength with footwear engineered for stability and performance, fostering a community “Grounded for Greatness.”</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="leather-bg text-[#F8F1E9] py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-xl mb-4">Stabl © 2025. All rights reserved.</p>
+      <p class="text-lg mb-4">Contact: <a href="mailto:hamoodx614@gmail.com" class="hover:text-[#D4A373]">hamoodx614@gmail.com</a></p>
+      <div class="flex justify-center space-x-6">
+        <a href="https://www.linkedin.com/in/ahmad-hamood-990a8b237" target="_blank" class="hover:text-[#D4A373]">LinkedIn</a>
+        <a href="https://stabl.netlify.app" target="_blank" class="hover:text-[#D4A373]">Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in animation on scroll
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
